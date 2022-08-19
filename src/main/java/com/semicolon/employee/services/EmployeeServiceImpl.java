@@ -11,6 +11,7 @@ import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
+import java.util.Optional;
 import java.util.UUID;
 
 @Service
@@ -45,6 +46,16 @@ public class EmployeeServiceImpl implements  EmployeeService{
         response.setMessage("Successfully created");
         response.setEmployee(savedEmployee);
         return response;
+    }
+
+    @Override
+    public EmployeeResponse findEmployeeById(long employeeId) {
+         Optional<Employee> employeeResp = employeeRepository.findAllById(employeeId);
+         Employee employee =employeeResp.get();
+         EmployeeResponse  employeeResponse = new EmployeeResponse();
+         employeeResponse.setMessage("seen");
+         employeeResponse.setEmployee(employee);
+        return employeeResponse;
     }
 
     public  String generateEmployeeId(){

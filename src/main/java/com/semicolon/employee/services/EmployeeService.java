@@ -9,5 +9,5 @@ public interface EmployeeService {
 
     EmployeeResponse createEmployee(EmployeeCreationRequest employeeCreationRequest);
 
-    EmployeeResponse findEmployeeById(long l);
+    EmployeeResponse findEmployeeById(long employeeId);
 }

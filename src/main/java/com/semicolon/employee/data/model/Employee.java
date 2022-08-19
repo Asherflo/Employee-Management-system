@@ -26,7 +26,6 @@ public class Employee {
     private String lastName;
     @NotNull
     @Email
-    @Column(unique = true)
     private String email;
     private String address;
     private String phoneNUmber;
