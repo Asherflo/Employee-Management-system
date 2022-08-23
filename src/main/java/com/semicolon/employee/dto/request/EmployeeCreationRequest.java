@@ -1,4 +1,4 @@
-package com.semicolon.employee.dto;
+package com.semicolon.employee.dto.request;
 
 import com.semicolon.employee.data.enums.Department;
 import com.semicolon.employee.data.enums.Gender;
@@ -25,6 +25,7 @@ public class EmployeeCreationRequest {
     private Status employeeStatus;
 
     private String dataJoined;
+    private boolean suspended;
 
 
 }

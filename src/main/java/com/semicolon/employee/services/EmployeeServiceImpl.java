@@ -1,18 +1,15 @@
 package com.semicolon.employee.services;
 
-import com.semicolon.employee.data.enums.Department;
 import com.semicolon.employee.data.enums.Gender;
 import com.semicolon.employee.data.enums.Status;
 import com.semicolon.employee.data.model.Employee;
 import com.semicolon.employee.data.repositories.EmployeeRepository;
-import com.semicolon.employee.dto.EmployeeCreationRequest;
-import com.semicolon.employee.dto.EmployeeResponse;
+import com.semicolon.employee.dto.request.EmployeeCreationRequest;
+import com.semicolon.employee.dto.response.EmployeeResponse;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
-import java.time.LocalDateTime;
 import java.util.Optional;
-import java.util.UUID;
 
 @Service
 @AllArgsConstructor

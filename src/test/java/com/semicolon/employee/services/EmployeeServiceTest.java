@@ -1,9 +1,8 @@
 package com.semicolon.employee.services;
 
-import com.semicolon.employee.data.enums.Gender;
 import com.semicolon.employee.data.enums.Status;
-import com.semicolon.employee.dto.EmployeeCreationRequest;
-import com.semicolon.employee.dto.EmployeeResponse;
+import com.semicolon.employee.dto.request.EmployeeCreationRequest;
+import com.semicolon.employee.dto.response.EmployeeResponse;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -12,7 +11,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import static com.semicolon.employee.data.enums.Gender.FEMALE;
-import static com.semicolon.employee.data.enums.Gender.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 @SpringBootTest
